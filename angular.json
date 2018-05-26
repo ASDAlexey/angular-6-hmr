@@ -37,6 +37,23 @@
             "scripts": [ ]
           },
           "configurations": {
+            "dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ],
+              "optimization": false,
+              "outputHashing": "all",
+              "sourceMap": true,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": false,
+              "extractLicenses": false,
+              "vendorChunk": false,
+              "buildOptimizer": false
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -50,7 +67,7 @@
               "extractCss": true,
               "namedChunks": false,
               "aot": true,
-              "extractLicenses": true,
+              "extractLicenses": false,
               "vendorChunk": false,
               "buildOptimizer": true
             }
@@ -62,6 +79,9 @@
             "browserTarget": "router:build"
           },
           "configurations": {
+            "dev": {
+              "browserTarget": "router:build:dev"
+            },
             "production": {
               "browserTarget": "router:build:production"
             }
