@@ -2,10 +2,9 @@
   "name": "router",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "serve:hmr": "ng serve --configuration hmr --hmr",
+    "serve:hmr": "ng serve --configuration hmr --hmr --hmr-warning false",
     "build": "ng build",
-    "build:prod:aot": "ng build --prod"
+    "build:prod": "ng build --prod --build-optimizer --aot"
   },
   "private": true,
   "dependencies": {

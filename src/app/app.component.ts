@@ -1,4 +1,5 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
+import { environment } from '@env/environment';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor() {
+    console.log(environment);
+  }
 }
