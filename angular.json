@@ -37,22 +37,13 @@
             "scripts": [ ]
           },
           "configurations": {
-            "dev": {
+            "hmr": {
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.dev.ts"
+                  "with": "src/environments/environment.hmr.ts"
                 }
-              ],
-              "optimization": false,
-              "outputHashing": "all",
-              "sourceMap": true,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": false,
-              "extractLicenses": false,
-              "vendorChunk": false,
-              "buildOptimizer": false
+              ]
             },
             "production": {
               "fileReplacements": [
@@ -79,8 +70,8 @@
             "browserTarget": "router:build"
           },
           "configurations": {
-            "dev": {
-              "browserTarget": "router:build:dev"
+            "hmr": {
+              "browserTarget": "router:build:hmr"
             },
             "production": {
               "browserTarget": "router:build:production"
