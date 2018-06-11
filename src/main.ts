@@ -9,12 +9,14 @@ import { hmrBootstrap } from './hmr';
 
 if (environment.production) {
   enableProdMode();
+  console.log('You are in Prod mode');
 }
 
 const bootstrap = () => platformBrowserDynamic().bootstrapModule(AppModule);
 
 if (environment.hmr) {
-  if (module[ 'hot' ]) {
+  console.log('You are in HMR mode');
+  if (module['hot']) {
     hmrBootstrap(module, bootstrap);
   } else {
     console.error('HMR is not enabled for webpack-dev-server!');
@@ -22,4 +24,5 @@ if (environment.hmr) {
   }
 } else {
   bootstrap();
+  console.log('You are in Dev mode');
 }

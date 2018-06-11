@@ -1,5 +1,11 @@
 @import "variables";
 
+html{
+  padding: 20px;
+  background-color: orange;
+}
+
 body {
-  background-color: $green;
+  padding: 30px;
+  background-color: cyan;
 }
