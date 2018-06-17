@@ -28,13 +28,8 @@
             ],
             "statsJson": true,
             "styles": [
-              "src/assets/styles/styles.less"
+              "src/app/styles/styles.less"
             ],
-            "stylePreprocessorOptions": {
-              "includePaths": [
-                "src/assets/styles"
-              ]
-            },
             "scripts": [ ]
           },
           "configurations": {
