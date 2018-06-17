@@ -10,7 +10,7 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss"
+          "styleext": "less"
         }
       },
       "architect": {
@@ -28,7 +28,7 @@
             ],
             "statsJson": true,
             "styles": [
-              "src/assets/styles/styles.scss"
+              "src/assets/styles/styles.less"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
